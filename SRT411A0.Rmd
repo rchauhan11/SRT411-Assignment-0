@@ -1,0 +1,149 @@
+---
+title: "SRT411 Assignment 0"
+author: "Rashmi Chauhan"
+date: "March 1, 2019"
+output:
+  pdf_document: default
+html_document:
+  df_print: paged
+Username(GitHub): rchauhan11
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+###Introduction to Assignment###
+For this particular assignment, I am going to perform To-do list as provided in the link [^1]. With that, I need to convert the file with .rmd extenstion to .pdf extension using knitr. In addition, its also helpful in learning content like [^2],[^3],[^4],[^5],[^6],[^7] from the website. And finally, I will learn how to make repositiories to present my files on github using my account credentials.
+
+
+The TO-DO 
+
+1)
+```{r}
+((2018-2014)/(2014-1999))*100
+```
+
+2)
+```{r}
+a=((2018-2014)/(2014-1999))*100
+a
+```
+
+3)
+```{r}
+sum(4,5,8,11)
+```
+
+4)
+```{r}
+plot(rnorm(100))
+```
+
+5)
+```{r}
+help(sqrt)
+```
+
+6)
+```{r}
+plot(rnorm(100))
+```
+
+7)
+```{r}
+R1 = seq(from=31, to=60, by=1)
+R2 = matrix(R1,ncol = 5, nrow = 6)
+R1
+```
+```{r}
+R2
+```
+8)
+```{r}
+C1=seq(from=1, to=100, by=1)
+C2=seq(from=101, to=200, by=1)
+C3=seq(from=201, to=300, by=1)
+t= data.frame(a=C1,b=C1+C2,c=C1+C2+C3)
+plot(t)
+```
+
+9)
+```{r}
+plot(t$a, type="l", ylim=range(t),lwd=3, col=rgb(1,0,0,0.3))
+lines(t$b, type="s", lwd=2,col=rgb(0.3,0.4,0.3,0.9))
+points(t$c, pch=20, cex=4,col=rgb(0,0,1,0.3))
+```
+
+10)
+```{r}
+sqrt(mean(rnorm(100)))
+```
+
+11)
+```{r}
+d = data.frame(g = c(3,4,5),h = c(12,43,54))
+write.table(d, file="tst1.txt", row.names=FALSE)
+d2 = read.table(file="tst1.txt",header=TRUE)
+d2$g*5
+```
+
+12)
+```{r}
+date1=strptime( c("20160301","20160403"),format="%Y%m%d")
+present=c(10,6)
+date1
+```
+```{r}
+present
+```
+13)
+```{r}
+vector=seq(from=1, to=100, by=1)
+s=c()
+for(i in 1:100)
+{
+  if(vector[i]<5)
+  {
+    s[i]=vector[i]*5;
+  }
+  else if(vector[i]>90)
+  {
+    s[i]=vector[i]*10;
+  }
+  else
+  {
+    s[i]=vector[i]*0.1;
+  }
+}
+s
+```
+
+14)
+```{r}
+fun= function(x1,x2 )
+{
+  vector[i]=x1[i];
+  for(i in length(vector))
+  {
+    
+  }
+}
+```
+
+
+##Refrences##
+1. https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+2. http://rmarkdown.rstudio.com/
+  3. http://nicercode.github.io/guides/reports/
+  4. http://kbroman.org/knitr_knutshell/pages/markdown.html
+5. http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
+6. https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+7. https://github.com/
+  
+  [^1]: https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+[^2]:http://rmarkdown.rstudio.com/
+  [^3]:http://nicercode.github.io/guides/reports/
+  [^4]:http://kbroman.org/knitr_knutshell/pages/markdown.html
+[^5]:http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
+[^6]:https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+[^7]:https://github.com/
